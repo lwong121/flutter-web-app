@@ -1,0 +1,101 @@
+<!--
+  Name: Lauren Wong
+  Date: June, 2020
+  Description: This is the index.html file for the Flutter website which is a simple blogging website
+  inspired by Twitter. This includes some of the general structure for this website such as the
+  navigation bar at the top and the footer. It also includes pages such as the empty home page, the
+  post page where users create a post, the user posts page, the trending page, and the
+  information/introduction page.
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Flutter</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='styles.css'>
+    <script src='index.js'></script>
+  </head>
+  <body>
+    <header>
+      <h1>Flutter</h1>
+      <form id="search-form">
+        <input id='search-box' type='text' placeholder="Search">
+      </form>
+      <nav>
+        <img id="home-btn" src="img/home.png" alt="home icon" class="selected">
+        <img id="post-btn" src="img/send.png" alt="post icon">
+        <img id="trending-btn" src="img/trending.png" alt="trending icon">
+        <img id="info-btn" src="img/information.png" alt="information icon">
+      </nav>
+    </header>
+    <main>
+      <article id="home">
+      </article>
+      <article id="user-posts">
+      </article>
+      <article id="trending">
+      </article>
+      <article id="post" class="hidden">
+        <h3>Make a New Post!</h3>
+          <form id="post-form">
+            <section>
+              <label for='user'>Name:</label>
+              <input type='text' id='username' name='username' required>
+            </section>
+            <label for="avatars">Choose your avatar:</label>
+            <section id="avatars">
+              <img src="img/bear.png" alt="bear" class="selected">
+              <img src="img/bird.png" alt="bird">
+              <img src="img/butterfly.png" alt="butterfly">
+              <img src="img/cat.png" alt="cat">
+              <img src="img/dolphin.png" alt="dolphin">
+              <img src="img/elephant.png" alt="elephant">
+              <img src="img/frog.png" alt="frog">
+              <img src="img/horse.png" alt="horse">
+              <img src="img/kangaroo.png" alt="kangaroo">
+              <img src="img/koala.png" alt="koala">
+              <img src="img/monkey.png" alt="monkey">
+              <img src="img/rabbit.png" alt="rabbit">
+              <img src="img/sloth.png" alt="sloth">
+            </section>
+            <label for='post'>What's on your mind?</label>
+            <textarea type='text' id='post-box' name='post' required></textarea>
+            <button id="submit-btn">Submit!</button>
+          </form>
+      </article>
+      <article id="info" class="hidden">
+        <section>
+          <img id="greeting" src="img/hi.png" alt="girl saying hi">
+          <section>
+            <h2>Hi there!</h2>
+            <p>
+              I am Lauren Wong and this is one of beginning projects in web development. This website
+              is called Flutter, a simple blogging website inspired by the popular social media site
+              Twitter.
+            </p>
+            <h4>On this website you can:</h4>
+            <ul>
+              <li>post a message on the board using the post button in the top right</li>
+              <li>search through all the posts, hashtags, and users on Flutter using the search bar at the time</li>
+              <li>like other users' posts with the heart button beneath each post</li>
+              <li>check out all posts from a specific user by clicking on the user's name or avatar profile image</li>
+            </ul>
+            <h3>
+              Thank you for checking out Flutter!
+            </h3>
+          </section>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p>Site created by Lauren Wong.</p>
+      <p>
+        All icons used are made by Freepik from
+        <a href="https://www.flaticon.com/">flaticon.com</a>.
+      </p>
+    </footer>
+  </body>
+</html>

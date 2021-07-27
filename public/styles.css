@@ -1,0 +1,186 @@
+/*
+  Name: Lauren Wong
+  Date: June, 2020
+  Description: This is the styles.css file for the Flutter website which is a simple blogging site
+  inspired by Twitter. This adds the style for the website that follows a simple and clean theme
+  with lots of white, black, and grey as the main colors.
+ */
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: auto;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+h1 {
+  font-weight: 600;
+  font-style: italic;
+  margin-left: 30px;
+}
+
+header, nav, form {
+  display: flex;
+}
+
+header {
+  box-shadow: 0px 10px 5px rgb(167, 167, 167);
+  margin-bottom: 30px;
+}
+
+header, nav {
+  justify-content: space-between;
+}
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+
+nav img {
+  text-align: center;
+  padding: 30px 10px 30px 10px;
+  height: 25px;
+  width: 25px;
+}
+
+nav img:hover, #avatars img:hover, #reaction>img:hover, .user-info img:hover {
+  cursor: pointer;
+  filter: drop-shadow(10px 10px 5px rgb(167, 167, 167));
+}
+
+.selected {
+  filter: drop-shadow(10px 10px 8px rgb(167, 167, 167));
+}
+
+form {
+  flex-direction: column;
+  align-content: space-between;
+}
+
+#post-box {
+  height: 200px;
+  width: 400px;
+}
+
+#submit-btn {
+  width: fit-content;
+  padding: 5px;
+  margin: 20px 0px 20px 0px;
+}
+
+form label {
+  margin: 30px 10px 10px 0px;
+}
+
+#avatars img {
+  height: 70px;
+  width: 70px;
+}
+
+footer {
+  box-shadow: 0px -10px 5px rgb(167, 167, 167);
+  margin-top: 100px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card, #info {
+  box-shadow: 10px 10px 5px rgb(167, 167, 167);
+  border-radius: 7px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.profile {
+  height: 30px;
+  width: 30px;
+  filter: drop-shadow(10px 10px 8px rgb(167, 167, 167));
+  padding: 5px;
+  margin-right: 15px;
+}
+
+.user-info, .metadata {
+  display: flex;
+}
+
+.metadata {
+  justify-content: space-between;
+}
+
+.user-info h2 {
+  margin: 10px;
+}
+
+.post {
+  margin-left: 65px;
+}
+
+.reaction img {
+  height: 15px;
+  width: 15px;
+  margin: auto 10px auto 0px;
+}
+
+.reaction p {
+  margin: 5px;
+}
+
+.reaction {
+  display: flex;
+  width: 70px;
+  margin-left: 65px;
+}
+
+.reaction p {
+  margin: 0px 5px 0px 5px;
+}
+
+#search-box {
+  height: 25px;
+  width: 300px;
+  margin: auto;
+}
+
+.user-info h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.reaction-section {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+#info>section {
+  display: flex;
+  align-items: center;
+}
+
+#greeting {
+  height: 200px;
+  width: auto;
+  margin: 0px 40px 0px 0px;
+}
+
+#close-btn {
+  height: 30px;
+  width: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  box-shadow: 10px 10px 5px rgba(255, 0, 0, 0.486);
+  border-radius: 5px;
+  padding: 50px;
+  text-align: center;
+}
