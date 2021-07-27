@@ -370,6 +370,7 @@
   function handleSearch() {
     showHome();
     let searchTerm = id("search-box").value.trim();
+    id("search-box").value = "";
     if (searchTerm !== "") {
       let url = "/flutter/posts?search=" + searchTerm;
       fetch(url)
