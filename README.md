@@ -9,4 +9,4 @@ Flutter is a simple online blogging website inspired by the popular social media
 - view the top 5 trending posts on Flutter using the trending button which is the third button in the navigation bar
 
 ## Additional Files
-[API Documentation for Flutter](APIDOC)
+[API Documentation for Flutter](APIDOC.md)
