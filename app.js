@@ -58,10 +58,10 @@ app.get("/flutter/posts", async (req, res) => {
 });
 
 /**
- * Handles a POST request to add a new post to the database using the given POST parameters of user
- * and post which represent the name of the user who made the post and their post which may or may
- * not include the hashtag. It responds with a json containing all information on the new post
- * including the id, user, post, hashtag, likes, date, and avatar.
+ * Handles a POST request to add a new post to the database using the given POST parameters of user,
+ * post, and avatar which represent the name of the user who made the post, their post which may or
+ * may not include the hashtag, and their chosen avatar. It responds with a json containing all
+ * information on the new post including the id, user, post, hashtag, likes, date, and avatar.
  */
 app.post("/flutter/post", async (req, res) => {
   let user = req.body.user;
@@ -123,7 +123,7 @@ app.post("/flutter/likes", async (req, res) => {
   let id = req.body.id;
   res.type("text");
   if (!id) {
-    res.status(USER_ERROR).send("Missing one or more of the required params.");
+    res.status(USER_ERROR).send("Missing the required id param.");
   } else {
     try {
       const db = await getDBConnection(DB_NAME);
