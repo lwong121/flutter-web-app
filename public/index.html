@@ -3,9 +3,8 @@
   Date: June, 2020
   Description: This is the index.html file for the Flutter website which is a simple blogging website
   inspired by Twitter. This includes some of the general structure for this website such as the
-  navigation bar at the top and the footer. It also includes pages such as the empty home page, the
-  post page where users create a post, the user posts page, the trending page, and the
-  information/introduction page.
+  navigation bar at the top and the footer. It also includes pages such as the home page, the
+  create a post page, the user posts page, the trending page, and the information page.
  -->
 
 <!DOCTYPE html>
@@ -36,8 +35,6 @@
       </article>
       <article id="user-posts">
       </article>
-      <article id="trending">
-      </article>
       <article id="post" class="hidden">
         <h3>Make a New Post!</h3>
           <form id="post-form">
@@ -65,6 +62,8 @@
             <textarea type='text' id='post-box' name='post' required></textarea>
             <button id="submit-btn">Submit!</button>
           </form>
+      </article>
+      <article id="trending">
       </article>
       <article id="info" class="hidden">
         <section>

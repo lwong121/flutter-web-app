@@ -6,14 +6,13 @@
   with lots of white, black, and grey as the main colors.
  */
 
-body {
+body, main {
   font-family: 'Raleway', sans-serif;
   margin: auto;
 }
 
 main {
   width: 80%;
-  margin: auto;
 }
 
 h1 {
@@ -22,7 +21,7 @@ h1 {
   margin-left: 30px;
 }
 
-header, nav, form {
+header, nav, form, .user-info, .metadata, .reaction, .reaction-section, #info>section {
   display: flex;
 }
 
@@ -31,18 +30,15 @@ header {
   margin-bottom: 30px;
 }
 
-header, nav {
+header, nav, .metadata, .reaction-section {
   justify-content: space-between;
 }
 
 nav {
-  justify-content: space-between;
-  align-items: center;
   margin-right: 20px;
 }
 
 nav img {
-  text-align: center;
   padding: 30px 10px 30px 10px;
   height: 25px;
   width: 25px;
@@ -53,7 +49,7 @@ nav img:hover, #avatars img:hover, #reaction>img:hover, .user-info img:hover {
   filter: drop-shadow(10px 10px 5px rgb(167, 167, 167));
 }
 
-.selected {
+.selected, .profile {
   filter: drop-shadow(10px 10px 8px rgb(167, 167, 167));
 }
 
@@ -86,7 +82,6 @@ footer {
   box-shadow: 0px -10px 5px rgb(167, 167, 167);
   margin-top: 100px;
   padding: 20px;
-  text-align: center;
 }
 
 .card, #info {
@@ -99,24 +94,15 @@ footer {
 .profile {
   height: 30px;
   width: 30px;
-  filter: drop-shadow(10px 10px 8px rgb(167, 167, 167));
   padding: 5px;
   margin-right: 15px;
-}
-
-.user-info, .metadata {
-  display: flex;
-}
-
-.metadata {
-  justify-content: space-between;
 }
 
 .user-info h2 {
   margin: 10px;
 }
 
-.post {
+.post, .reaction {
   margin-left: 65px;
 }
 
@@ -131,9 +117,7 @@ footer {
 }
 
 .reaction {
-  display: flex;
-  width: 70px;
-  margin-left: 65px;
+  width: 80px;
 }
 
 .reaction p {
@@ -152,14 +136,10 @@ footer {
 }
 
 .reaction-section {
-  display: flex;
-  align-items: center;
   margin-top: 30px;
-  justify-content: space-between;
 }
 
-#info>section {
-  display: flex;
+.reaction-section, #info>section, nav {
   align-items: center;
 }
 
@@ -167,11 +147,6 @@ footer {
   height: 200px;
   width: auto;
   margin: 0px 40px 0px 0px;
-}
-
-#close-btn {
-  height: 30px;
-  width: 30px;
 }
 
 .hidden {
@@ -182,5 +157,8 @@ footer {
   box-shadow: 10px 10px 5px rgba(255, 0, 0, 0.486);
   border-radius: 5px;
   padding: 50px;
+}
+
+footer, .error {
   text-align: center;
 }
