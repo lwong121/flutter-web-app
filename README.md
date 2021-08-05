@@ -10,7 +10,7 @@ Flutter is a simple online blogging website inspired by the popular social media
 - check out all posts from a specific user by clicking on the user's name or avatar profile image
 - view the top 5 trending posts on Flutter using the trending button which is the third button in the navigation bar
 
-It is a full-stack website created using HTML, CSS, JavaScript, Node, and SQLite.
+It is a full-stack website created using HTML, CSS, JavaScript, Node, and SQLite. All icons used in the website were created by Freepik on flaticon.com.
 
 ## Additional Files
 [API Documentation for Flutter](APIDOC.md)
